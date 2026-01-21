@@ -292,6 +292,11 @@ form input:focus{
     width: 280px;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(44, 177, 44);
+}
+
 @media screen and (max-width: 450px) and (max-height: 960px) {
     
     .intro-container{

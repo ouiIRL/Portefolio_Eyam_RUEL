@@ -13,14 +13,14 @@
             </div>
             <div class="header-ul">
                 <ul>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <a href="#qui_suis_-_je"><li>About</li></a>
+                    <a href="#competences"><li>Skills</li></a>
+                    <a href="#projets"><li>Projets</li></a>
+                   <a href="#contact"><li>Contact</li></a>
                 </ul>
             </div>
             <div class="header-right">
-                <button type="button" class="contact-button" > Prendre contact </button>
+                <a href="#contact"><button type="button" class="contact-button" > Prendre contact </button></a>
             </div>
         </div>
     </header>
@@ -29,7 +29,7 @@
             <h1>Développeur web full stack</h1>
             <h2>En recherche d'un stage de 3 mois courant avril</h2>
             <div class="intro-buttons">
-                <a href="#competences"><button class="left-button">Voir mon travail</button></a>
+                <a href="#projets"><button class="left-button">Voir mon travail</button></a>
                 <a href="#qui_suis_-_je"><button class="right-button">Qui suis-je</button></a>
             </div>
         </section>
@@ -136,7 +136,7 @@
                 </div>
                 
             </section>
-            <section class="projets">
+            <section class="projets" id="projets">
                 <h2>Mes Projets</h2>
                 <p>voici quelques un de mes projets dans ma longue carrière <br> de developpeur.</p>
                 <div class="competenceAndProjet">
@@ -200,7 +200,7 @@
             </section>
 
             <!-- Belek le bouton "voir plus de projet"-->
-             <section class="contact">
+             <section class="contact" id="contact">
                 <h2>Travaillons Ensemble !</h2>
                 <p>voici quelques un de mes projets dans ma longue carrière <br> de developpeur.</p>
                     <form method="post" action="https://formsubmit.co/jasmine.dh.ru@gmail.com">
@@ -209,19 +209,19 @@
                         <input type="hidden" name="_captcha" value="false">
                         <label>
                             Nom <br>
-                            <input id="form-name" name="Nom" type="text" placeholder="Entrez votre nom">
+                            <input id="form-name" name="Nom" type="text" placeholder="Entrez votre nom" required>
                         </label>
                         <label>
                             E-mail <br>
-                            <input id="form-email" name="email" type="text" placeholder="Entrez votre e-mail">
+                            <input id="form-email" name="email" type="text" placeholder="Entrez votre e-mail" required>
                         </label>
                         <label>
                             Objet <br>
-                            <input id="form-subject" name="Objet" type="text" placeholder="Rédigez votre objet">
+                            <input id="form-subject" name="Objet" type="text" placeholder="Rédigez votre objet" required>
                         </label>
                         <label>
                             Message <br>
-                            <input id="form-message" name="message" type="text" placeholder="Rédigez votre message">
+                            <textarea id="form-message" name="message" placeholder="Rédigez votre message" rows="5" required></textarea>
                         </label>
                         <label>
                             <input type="submit" value="envoyer">
