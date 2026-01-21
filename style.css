@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*
+p{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+} */
+
+/*
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 60px);
+}
+    */
+
+.domaine ul{
+    word-wrap: break-word;
+    overflow-wrap: break-word;   
+}
+
+header{
+    width: 100vw;
+    height: 60px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /*compatibilité Safari/IOS*/
+    position: fixed;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-ul ul{
+    display: flex;
+    gap: 5px;
+    color: rgb(44, 177, 44);
+    justify-content: center;
+}
+.header-ul{
+    display: flex;
+    align-items: center;
+}
+.contact-button{
+    background-color: rgb(41, 209, 41);
+    border-radius: 7px;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+p{
+    color: rgb(36, 119, 36);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+}
+
+.intro-container{
+    background-color: rgb(202, 255, 226);
+    
+}
+
+.intro-container h1{
+    text-align: center;
+    color: rgb(3, 59, 3);
+}
+h2{
+    text-align: center;
+    color: rgb(14, 133, 14);
+}
+
+.intro-buttons{
+    display: flex;
+    justify-content: center;
+}
+.intro-buttons button{
+    margin: 20px;
+    border-radius: 17px;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+}
+.left-button{
+        background-color: rgb(41, 209, 41);
+        color: white;
+        border: 1px solid white;
+        transition-duration: 0.2s;
+}
+.left-button:hover{
+    background-color: white;
+        color: rgb(41, 209, 41);
+        border: 1px solid rgb(41, 209, 41);
+        transition-duration: 0.2s;
+}
+
+.right-button{
+    background-color: white;
+        color: rgb(41, 209, 41);
+        border: 1px solid rgb(41, 209, 41);
+        transition-duration: 0.2s;
+}
+.right-button:hover{
+    background-color: rgb(41, 209, 41);
+        color: white;
+        transition-duration: 0.2s;
+}
+
+.aboutMe-container{
+  overflow-wrap: break-word;
+  max-width: 100%;
+  overflow: scroll;
+}
+
+.bottom-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.bottom-container p{
+    justify-content: flex-end;
+    
+}
+
+.bottom-container-left p{
+    text-align: left;
+    /*margin: 10px;*/
+}
+
+.bottom-container-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.bottom-container-left{
+    width: 50%;
+}
+
+.aboutMe-box{
+    text-align: start;
+    background-color: rgb(202, 255, 226);
+    border-radius: 13px;
+    padding: 20px;
+    border: 1px solid rgb(95, 255, 95);
+    color: rgb(36, 119, 36);
+}
+
+.domaine ul{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.competence{
+    background-color: rgb(202, 255, 226);
+}
+
+.box{
+    display: flex;
+}
+
+h2{
+    color: rgb(13, 94, 30);
+}
+
+
+.competence-top_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(222, 255, 222);
+    border: 1px solid rgb(87, 214, 214);
+    border-radius: 6px;
+    width: 20vw;
+    height: 45vh;
+    transition: box-shadow 0.6s;
+    overflow: hidden;
+    line-height: 1;
+}
+
+.box:hover{
+    box-shadow: -3px 7px 8px 0px rgb(185, 185, 185);
+}
+
+.box ul {
+    padding: 15px;
+}
+
+.box p{
+    font-size: 14px;
+}
+.competenceAndProjet{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+.skills_list{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+
+}
+
+.skills{
+    
+    padding: 5px;
+    border-radius: 9px;
+    color: rgb(36, 119, 36);
+    font-size: 12px;
+    background-color: rgb(192, 238, 192);
+    transition: background-color 0.5s;
+}
+
+.skills:hover{
+    background-color: rgb(168, 231, 168);
+}
+
+ul{
+    list-style: none;
+}
+
+.imgProjet{
+    border-top-left-radius: 6px ;
+    border-top-right-radius: 6px ;
+    margin-bottom: 13px;
+}
+
+.contact{
+    background-color:  rgb(202, 255, 226);
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(221, 255, 236);
+    padding: 16px;
+    box-shadow: 4px 5px 20px rgb(195, 195, 195);
+    border-radius: 13px;
+}
+
+
+form input{
+    border-radius: 4px;
+    margin: 10px 0 20px 0;
+    padding: 6px;
+    height: 40px;
+    max-width: 100%;
+    border: 1px solid rgb(146, 219, 180);
+}
+
+form input:focus{
+    border: 1px solid rgb(146, 219, 180);
+    background-color: rgb(145, 235, 160);
+}
+
+#form-message{
+    height: 120px;
+    width: 280px;
+}
+
+@media screen and (max-width: 450px) and (max-height: 960px) {
+    
+    .intro-container{
+        background-color: rgb(0, 136, 255);
+    }
+
+}
