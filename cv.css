@@ -1,0 +1,215 @@
+/* --- VARIABLES (Ta DA) --- */
+:root {
+  /* Palette exacte de ton portfolio */
+  --bg-body: rgb(202, 255, 226); /* Le fond général */
+  --bg-card: rgb(221, 255, 236); /* Le fond des conteneurs */
+  --text-dark: rgb(3, 59, 3); /* Titres foncés */
+  --text-medium: rgb(36, 119, 36); /* Texte courant */
+  --accent-green: rgb(
+    46,
+    204,
+    113
+  ); /* Vert un peu plus vif pour les tags/boutons */
+  --border-color: rgb(146, 219, 180); /* Lignes de séparation */
+  --shadow: 4px 5px 20px rgb(195, 195, 195); /* Ton ombre signature */
+
+  --font-stack: Helvetica, Arial, sans-serif;
+}
+
+/* --- RESET DE BASE --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-body);
+  font-family: var(--font-stack);
+  color: var(--text-medium);
+  line-height: 1.5;
+  /* Padding pour que ça respire sur écran */
+  padding: 30px 0;
+}
+
+/* --- LA PAGE CV (Format A4 style carte) --- */
+.cv-page {
+  background-color: var(--bg-card);
+  /* Dimensions approximatives A4 pour l'écran */
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto; /* Centré */
+
+  /* Ta signature visuelle */
+  border-radius: 13px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border-color);
+
+  padding: 30px; /* Marges intérieures du CV */
+}
+
+a {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- HEADER --- */
+.cv-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cv-header h1 {
+  font-size: 2.5rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.cv-header h2 {
+  font-size: 1.4rem;
+  color: var(--text-medium);
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+.objective {
+  font-weight: bold;
+  color: var(--text-dark);
+  background-color: rgba(146, 219, 180, 0.3); /* Petit surlignage vert */
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* --- LAYOUT 2 COLONNES (GRID) --- */
+.cv-grid {
+  display: grid;
+  /* Colonne gauche de 30%, colonne droite prend le reste */
+  grid-template-columns: 30% 1fr;
+  gap: 30px;
+}
+
+/* --- TITRES DE SECTIONS COMMUNS --- */
+h3 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  /* Petite ligne sous les titres */
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 10px;
+  font-size: 1.3rem;
+}
+
+/* --- SIDEBAR (Gauche) --- */
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-section ul {
+  list-style: none;
+}
+
+.sidebar-section li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+/* Les tags de compétences */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: var(--text-dark);
+  color: var(--bg-card);
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* --- MAIN CONTENT (Droite) --- */
+.main-section {
+  margin-bottom: 35px;
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.exp-header h4 {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+}
+
+.exp-date {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--text-medium);
+  background-color: rgba(146, 219, 180, 0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.main-section p {
+  margin-bottom: 10px;
+}
+
+.main-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.main-section li {
+  margin-bottom: 5px;
+}
+
+/* --- OPTIMISATION POUR L'IMPRESSION (PDF) --- */
+/* C'est MAGIQUE : quand tu fais CTRL+P, ça applique ça */
+@media print {
+  body {
+    background-color: white; /* On enlève le fond vert du body */
+    padding: 0;
+  }
+  .cv-page {
+    width: 100%; /* Prend toute la largeur du papier */
+    margin: 0;
+    box-shadow: none; /* Pas d'ombre à l'impression */
+    border: none; /* Pas de bordure */
+    border-radius: 0;
+    padding: 20px 0; /* Moins de padding */
+  }
+  /* On cache les emojis à l'impression si on veut faire très sérieux */
+  /* .icon { display: none; } */
+
+  /* Force les couleurs de fond pour les tags et objectifs */
+  .skill-tag,
+  .objective,
+  .exp-date {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
