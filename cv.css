@@ -213,3 +213,57 @@ h3 {
     print-color-adjust: exact;
   }
 }
+
+/* --- RESPONSIVE MOBILE & TABLETTE --- */
+@media screen and (max-width: 850px) {
+  /* On réduit les marges externes pour gagner de la place */
+  body {
+    padding: 10px;
+  }
+
+  /* On adapte la "feuille" à l'écran mobile */
+  .cv-page {
+    width: 100%;
+    max-width: 100%; /* Prend tout l'écran */
+    min-height: auto; /* La hauteur s'adapte au contenu */
+    padding: 20px; /* Marges intérieures réduites */
+    border-radius: 8px;
+  }
+
+  /* Le Header passe en colonne (centré) */
+  .cv-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .cv-header h1 {
+    font-size: 2rem; /* Nom un peu plus petit */
+  }
+
+  /* On casse la grille : tout s'empile en une seule colonne */
+  .cv-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* La barre latérale (Sidebar) */
+  .cv-sidebar {
+    border-bottom: 2px dashed var(--border-color);
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Optionnel : Si tu veux que les compétences s'affichent en bas 
+       et pas au début, décommente les lignes ci-dessous (nécessite display:flex sur cv-grid) */
+  /*
+    .cv-sidebar { order: 2; border-bottom: none; border-top: 2px dashed var(--border-color); padding-top: 20px;}
+    .cv-main-content { order: 1; }
+    */
+
+  /* Ajustement des listes de compétences pour prendre moins de place */
+  .skills-list {
+    justify-content: center;
+  }
+}
