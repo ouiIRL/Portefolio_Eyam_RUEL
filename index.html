@@ -1,237 +1,363 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Mon portefolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <div class="header-left">
-                <img src="grenouille.png" alt="grenouille">
-            </div>
-            <div class="header-ul">
-                <ul>
-                    <a href="#qui_suis_-_je"><li>About</li></a>
-                    <a href="#competences"><li>Skills</li></a>
-                    <a href="#projets"><li>Projets</li></a>
-                   <a href="#contact"><li>Contact</li></a>
-                </ul>
-            </div>
-            <div class="header-right">
-                <a href="#contact"><button type="button" class="contact-button" > Prendre contact </button></a>
-            </div>
+      <div class="header-container">
+        <div class="header-left">
+          <img src="grenouille.png" alt="grenouille" />
         </div>
+        <div class="header-ul">
+          <ul>
+            <a href="#qui_suis_-_je"><li>Qui suis-je</li></a>
+            <p>|</p>
+            <a href="#competences"><li>Compétences</li></a>
+            <p>|</p>
+            <a href="#projets"><li>Projets</li></a>
+            <p>|</p>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
+        </div>
+        <div class="header-right">
+          <a
+            href="https://pedrofrmndss.com/images/CV%20Pedro%20(1).pdf"
+            class="cv-link"
+            target="_blank"
+            ><button type="button" class="cv-button">Voir mon CV</button></a
+          >
+          <a href="#contact"
+            ><button type="button" class="contact-button">
+              Prendre contact
+            </button></a
+          >
+        </div>
+      </div>
     </header>
     <main>
-        <section class="intro-container">
-            <h1>Développeur web full stack</h1>
-            <h2>En recherche d'un stage de 3 mois courant avril</h2>
-            <div class="intro-buttons">
-                <a href="#projets"><button class="left-button">Voir mon travail</button></a>
-                <a href="#qui_suis_-_je"><button class="right-button">Qui suis-je</button></a>
+      <section class="intro-container">
+        <h1>Développeur web full stack</h1>
+        <h2>En recherche d'un stage de 3 mois courant avril</h2>
+        <div class="intro-buttons">
+          <a href="#projets"
+            ><button class="left-button">Voir mon travail</button></a
+          >
+          <a href="#qui_suis_-_je"
+            ><button class="right-button">Qui suis-je</button></a
+          >
+        </div>
+      </section>
+      <section class="aboutMe-container" id="qui_suis_-_je">
+        <div class="top-container">
+          <h2>Qui suis-je</h2>
+          <p>
+            un développeur passioné qui progresse en MMI, toujours à la
+            recherche<br />
+            des dernières innovations afin d'évoluer perpétuellement
+          </p>
+        </div>
+        <div class="bottom-container">
+          <div class="bottom-container-left">
+            <p>
+              Je suis développeur web full-stack et je poursuis actuellement mes
+              études en MMI. Mon parcours dans le monde des technologies a
+              débuté par une curiosité pour le fonctionnement des objets, puis
+              s'est transformé en une passion pour la création d'expériences
+              numériques à la fois esthétiques et fonctionnelles.<br /><br />
+              Je crois en l'écriture d'un code propre et maintenable, ainsi
+              qu'au respect des bonnes pratiques. Qu'il s'agisse de créer des
+              interfaces front-end réactives ou d'architecturer des systèmes
+              back-end évolutifs, j'aborde chaque projet avec le souci du détail
+              et un engagement envers la qualité. <br /><br />
+            </p>
+            <div class="competence-main">
+              <p>
+                <strong>Anecdote !</strong><br />
+                Au début je voulais faire des jeux vidéo mais je me suis trompé
+                de formation donc je me suis retrouvé à être dev web
+              </p>
             </div>
-        </section>
-        <section class="aboutMe-container" id="qui_suis_-_je">
-            <div class="top-container">
-                <h2>Qui suis-je</h2>
-                <p>un développeur passioné qui progresse en MMI, toujours à la recherche<br /> des dernières innovations afin d'évoluer perpétuellement</p>
+          </div>
+          <div class="bottom-container-right">
+            <div class="formation aboutMe-box">
+              Formation <br /><br /><br />BUT - MMI <br /><br /><br />
+              2ème année
             </div>
-            <div class="bottom-container">
-                <div class="bottom-container-left">
-                    <p>
-                        Je suis développeur web full-stack et je poursuis actuellement mes études en MMI. Mon parcours dans le monde des technologies a débuté par une curiosité pour le fonctionnement des objets, puis s'est transformé en une passion pour la création d'expériences numériques à la fois esthétiques et fonctionnelles.<br><br>
-                        Je crois en l'écriture d'un code propre et maintenable, ainsi qu'au respect des bonnes pratiques. Qu'il s'agisse de créer des interfaces front-end réactives ou d'architecturer des systèmes back-end évolutifs, j'aborde chaque projet avec le souci du détail et un engagement envers la qualité. <br><br>
-                    </p>
-                    <div class="competence-main">
-                        <p><strong>Anecdote !</strong><br> Au début je voulais faire des jeux vidéo mais je me suis trompé de formation donc je me suis retrouvé à être dev web </p>
-                    </div>
-                </div>
-                <div class="bottom-container-right">
-                    <div class="formation aboutMe-box"> Formation <br /><br /><br />BUT - MMI <br /><br /><br /> 2ème année</div>
-                    <div class="domaine aboutMe-box">Domaine d'expertise<br /><br /><br />
-                        <ul>
-                            <li>Développement web full-stack</li>
-                            <li>Framework Javascript modernes</li>
-                            <li>Conception et architecture de base de données</li>
-                            <li>Expérience utilisateur et conception d'interfaces</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <section class="competence" id="competences">
-                <div class="competence-top_container">
-                    <h2>Compétences et Technologies</h2>
-                    <p>bla bla bla je connais plein de truc embauchez moi svp <br> merci pour votre attention</p>
-                </div> 
-                <div class="competenceAndProjet">
-                        <div class="box">
-                            <div>
-                                <img src="" alt="grenouille">
-                            </div>
-                            <div>
-                                <h3>Frontend</h3>
-                            </div>
+            <div class="domaine aboutMe-box">
+              Domaine d'expertise<br /><br /><br />
+              <ul>
+                <li>Développement web full-stack</li>
+                <li>Framework Javascript modernes</li>
+                <li>Conception et architecture de base de données</li>
+                <li>Expérience utilisateur et conception d'interfaces</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="competence" id="competences">
+        <div class="competence-top_container">
+          <h2>Compétences et Technologies</h2>
+          <p>
+            bla bla bla je connais plein de truc embauchez moi svp <br />
+            merci pour votre attention
+          </p>
+        </div>
+        <div class="competenceAndProjet">
+          <div class="box">
+            <div>
+              <img src="" alt="grenouille" />
+            </div>
+            <div>
+              <h3>Frontend</h3>
+            </div>
 
-                                <ul class="skills_list">
-                                    <li class="skills">Html5</li>
-                                    <li class="skills">Css3</li>
-                                    <li class="skills">Xml</li>
-                                    <li class="skills">Javascript</li>
-                                    <li class="skills">React</li>
-                                    <li class="skills">SASS</li>
-                                </ul>
+            <ul class="skills_list">
+              <li class="skills">Html5</li>
+              <li class="skills">Css3</li>
+              <li class="skills">Xml</li>
+              <li class="skills">Javascript</li>
+              <li class="skills">React</li>
+              <li class="skills">SASS</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div>
+              <img src="" alt="grenouille" />
+            </div>
+            <div>
+              <h3>Backend</h3>
+            </div>
+            <ul class="skills_list">
+              <li class="skills">PHP</li>
+              <li class="skills">MySQL</li>
+              <li class="skills">Node.js</li>
+              <li class="skills">Javascript</li>
+              <li class="skills">Python</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div>
+              <img src="" alt="grenouille" />
+            </div>
+            <div>
+              <h3>Outils et DevOps</h3>
+            </div>
+            <ul class="skills_list">
+              <li class="skills">Linux</li>
+              <li class="skills">Figma</li>
+              <li class="skills">Vs code</li>
+              <li class="skills">Git</li>
+            </ul>
+          </div>
+          <div class="box">
+            <div>
+              <img src="" alt="grenouille" />
+            </div>
+            <div>
+              <h3>Conception</h3>
+            </div>
 
-                    
-                        </div>
-                    <div class="box">
-                        <div>
-                            <img src="" alt="grenouille">
-                        </div>
-                        <div>
-                            <h3>Backend</h3>
-                        </div>
-                            <ul class="skills_list">
-                                    <li class="skills">PHP</li>
-                                    <li class="skills">MySQL</li>
-                                    <li class="skills">Node.js</li>
-                                    <li class="skills">Javascript</li>
-                                    <li class="skills">Python</li>
-                                </ul>
-                        
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img src="" alt="grenouille">
-                        </div>
-                        <div>
-                            <h3>Outils et DevOps</h3>
-                        </div>
-                            <ul class="skills_list">
-                                    <li class="skills">Linux</li>
-                                    <li class="skills">Figma</li>
-                                    <li class="skills">Vs code</li>
-                                    <li class="skills">Git</li>
-                                </ul>
-                        
-                    </div>
-                    <div class="box">
-                        <div>
-                            <img src="" alt="grenouille">
-                        </div>
-                        <div>
-                            <h3>Conception</h3>
-                        </div>
+            <ul class="skills_list">
+              <li class="skills">Design Responsive</li>
+              <li class="skills">Optimisation de Performance</li>
+              <li class="skills">Design Atomique</li>
+              <li class="skills">Méthode Agile</li>
+              <li class="skills">Wireframes et Maquettes intéractives</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="projets" id="projets">
+        <h2>Mes Projets</h2>
+        <p>
+          voici quelques un de mes projets dans ma longue carrière <br />
+          de developpeur.
+        </p>
+        <div class="competenceAndProjet">
+          <div class="projets-box">
+            <div class="box">
+              <img
+                class="imgProjet"
+                src="https://picsum.photos/260/120"
+                alt="Illu Projet"
+              />
+              <div>
+                <h3>Ce portefolio</h3>
+                <br />
+                <p>
+                  Ce portefolio est un exemple <br />de site vitrine que je peux
+                  créer !
+                </p>
+              </div>
+              <img src="" alt="" />
+              <ul class="skills_list">
+                <li class="skills">Html5</li>
+                <li class="skills">Css3</li>
+                <li class="skills">Xml</li>
+                <li class="skills">Javascript</li>
+                <li class="skills">React</li>
+              </ul>
+            </div>
+          </div>
+          <div class="projets-box">
+            <div class="box">
+              <img
+                class="imgProjet"
+                src="https://picsum.photos/260/120"
+                alt="Illu Projet"
+              />
+              <div>
+                <h3>Bac à sable intégration</h3>
+                <br />
+                <p>
+                  ce site rassemble différents petits <br />
+                  exercices d'entrainement d'intégration web
+                </p>
+              </div>
 
-                            <ul class="skills_list">
-                                    <li class="skills">Design Responsive</li>
-                                    <li class="skills">Optimisation de Performance</li>
-                                    <li class="skills">Design Atomique</li>
-                                    <li class="skills">Méthode Agile</li>
-                                    <li class="skills">Wireframes et Maquettes intéractives</li>
-                                </ul>
-                        
-                    </div>
-                </div>
-                
-            </section>
-            <section class="projets" id="projets">
-                <h2>Mes Projets</h2>
-                <p>voici quelques un de mes projets dans ma longue carrière <br> de developpeur.</p>
-                <div class="competenceAndProjet">
-                    <div class="projets-box">
-                        <div class="box">
-                                <img class="imgProjet" src="https://picsum.photos/260/120" alt="Illu Projet">
-                            <div>
-                                <h3>Ce portefolio</h3> <br />
-                                <p>Ce portefolio est un exemple <br />de site vitrine que je peux créer !</p>
-                            </div>
-                                <img src="" alt="">
-                                <ul class="skills_list">
-                                    <li class="skills">Html5</li>
-                                    <li class="skills">Css3</li>
-                                    <li class="skills">Xml</li>
-                                    <li class="skills">Javascript</li>
-                                    <li class="skills">React</li>
-                                    <li class="skills">SASS</li>
-                                </ul>
+              <ul class="skills_list">
+                <li class="skills">Html5</li>
+                <li class="skills">Css3</li>
+                <li class="skills">Javascript</li>
+              </ul>
+            </div>
+          </div>
+          <div class="projets-box">
+            <div class="box">
+              <img
+                class="imgProjet"
+                src="https://picsum.photos/260/120"
+                alt="Illu Projet"
+              />
+              <div>
+                <h3>Frontend</h3>
+              </div>
+              <div>
+                <ul class="skills_list">
+                  <li class="skills">Html5</li>
+                  <li class="skills">Css3</li>
+                  <li class="skills">Xml</li>
+                  <li class="skills">Javascript</li>
+                  <li class="skills">React</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    
-                        </div>
-                    </div>
-                    <div class="projets-box">
-                        <div class="box">
-                                <img class="imgProjet" src="https://picsum.photos/260/120" alt="Illu Projet">
-                            <div>
-                                <h3>Bac à sable intégration</h3> <br>
-                                <p>ce site rassemble différents petits <br> exercices d'entrainement d'intégration web</p>
-                            </div>
-
-                                <ul class="skills_list">
-                                    <li class="skills">Html5</li>
-                                    <li class="skills">Css3</li>         
-                                    <li class="skills">Javascript</li>
-                                </ul>
-
-                    
-                        </div>
-                    </div>
-                    <div class="projets-box">
-                        <div class="box">
-                                <img class="imgProjet" src="https://picsum.photos/260/120" alt="Illu Projet">
-                            <div>
-                                <h3>Frontend</h3>
-                            </div>
-                            <div>
-                                <ul class="skills_list">
-                                    <li class="skills">Html5</li>
-                                    <li class="skills">Css3</li>
-                                    <li class="skills">Xml</li>
-                                    <li class="skills">Javascript</li>
-                                    <li class="skills">React</li>
-                                    <li class="skills">SASS</li>
-                                </ul>
-                            </div>
-                    
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Belek le bouton "voir plus de projet"-->
-             <section class="contact" id="contact">
-                <h2>Travaillons Ensemble !</h2>
-                <p>voici quelques un de mes projets dans ma longue carrière <br> de developpeur.</p>
-                    <form method="post" action="https://formsubmit.co/jasmine.dh.ru@gmail.com">
-
-                        <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_captcha" value="false">
-                        <label>
-                            Nom <br>
-                            <input id="form-name" name="Nom" type="text" placeholder="Entrez votre nom" required>
-                        </label>
-                        <label>
-                            E-mail <br>
-                            <input id="form-email" name="email" type="text" placeholder="Entrez votre e-mail" required>
-                        </label>
-                        <label>
-                            Objet <br>
-                            <input id="form-subject" name="Objet" type="text" placeholder="Rédigez votre objet" required>
-                        </label>
-                        <label>
-                            Message <br>
-                            <textarea id="form-message" name="message" placeholder="Rédigez votre message" rows="5" required></textarea>
-                        </label>
-                        <label>
-                            <input type="submit" value="envoyer">
-                        </label>
-                        
-                    </form>
-
-             </section>
+      <!-- Belek le bouton "voir plus de projet"-->
+      <section class="contact" id="contact">
+        <div class="contact-header">
+          <h2>Travaillons Ensemble !</h2>
+          <p>Contactez ce formulaire pour quelcquonque demande ou offre.</p>
+        </div>
+        <div class="contact-container">
+          <form
+            method="post"
+            action="https://formsubmit.co/jasmine.dh.ru@gmail.com"
+          >
+            <input type="text" name="_honey" style="display: none" />
+            <input type="hidden" name="_captcha" value="false" />
+            <label>
+              <strong>Nom</strong> <br />
+              <input
+                id="form-name"
+                name="Nom"
+                type="text"
+                placeholder="Entrez votre nom"
+                required
+              />
+            </label>
+            <label>
+              <strong> E-mail </strong><br />
+              <input
+                id="form-email"
+                name="email"
+                type="text"
+                placeholder="Entrez votre e-mail"
+                required
+              />
+            </label>
+            <label>
+              <strong>Objet</strong> <br />
+              <input
+                id="form-subject"
+                name="Objet"
+                type="text"
+                placeholder="Rédigez votre objet"
+                required
+              />
+            </label>
+            <label>
+              <strong>Message</strong> <br />
+              <textarea
+                id="form-message"
+                name="message"
+                placeholder="Rédigez votre message"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <label>
+              <input id="submit-button" type="submit" value="envoyer" />
+            </label>
+          </form>
+          <div class="links">
+            <h3>Restons en contact</h3>
+            <br />
+            <p id="contact-desc">
+              Pour toutes demandes professionnelles, contactez moi en cliquant
+              sur liens ci-dessous. <br />Ou en remplissant le formulaire
+              ci-contre.
+            </p>
+            <br />
+            <p style="text-indent: 8px">
+              <a
+                href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQEKzN4ggYSvhwAAAZv28EC4todlpkko31rcP8zRSGMmvFYET1EBqA4binCii20Ez_V2Mu0_P9steI17-iPKHyPhKrS5D2lPpDM3N16GORD-5Ux3IRrkuXFjguC1mo7f7rwx_30=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fruel-amine-104926395%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app"
+                target="_blank"
+                style="display: flex; align-items: center"
+              >
+                <img
+                  src="linkedin.png"
+                  alt="logo linkedin"
+                  style="width: 33px; height: 33px"
+                />
+                <strong class="dark-green">Linkedin</strong></a
+              >
+            </p>
+            <br />
+            <p style="display: flex; align-items: center; text-indent: 8px">
+              <img
+                src="mail.png"
+                alt="logo mail"
+                style="width: 33px; height: 21px"
+              />
+              <strong> rueleyam@gmail.com</strong>
+            </p>
+            <br />
+            <p style="text-indent: 8px">
+              <a
+                href="https://github.com/ouiIRL"
+                target="_blank"
+                style="display: flex; align-items: center"
+                ><img
+                  src="github.png"
+                  alt="logo github"
+                  style="width: 33px; height: 33px"
+                />
+                <strong class="dark-green">Github</strong></a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
