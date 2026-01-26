@@ -367,6 +367,37 @@ footer {
   align-items: center;
   justify-content: center;
 }
+
+.imgProjet {
+  width: 100%;
+  height: 140px; /* Hauteur fixe pour l'uniformité */
+  object-fit: cover; /* Recadre l'image sans l'écraser */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Petit ajustement pour les textes à l'intérieur */
+.box-content {
+  padding: 0 10px;
+  flex-grow: 1; /* Permet d'occuper l'espace pour pousser les skills vers le bas */
+}
+
+/* Pour la date en bas */
+.date-projet {
+  font-size: 12px;
+  padding-bottom: 10px;
+  color: rgb(36, 119, 36); /* Votre vert habituel */
+  margin-top: 5px;
+}
+
+/* S'assurer que le lien ne casse pas la boite */
+.projets-box a {
+  text-decoration: none;
+  color: inherit; /* Garde la couleur du texte */
+  display: block; /* Prend toute la place */
+}
+
 @media screen and (max-width: 900px) {
   /* --- HEADER --- */
   .header-container {
